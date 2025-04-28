@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Lamantin en CSS</title>
+<style>
+body {
+  background: #8bd3f7;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lamantin {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  background: linear-gradient(to bottom, #888, #aaa);
+  border-radius: 60% 60% 50% 50% / 70% 70% 30% 30%;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.tete {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(to right, #888, #aaa);
+  border-radius: 50%;
+  top: 10px;
+  left: -60px;
+  transform: rotate(-15deg);
+}
+
+.queue {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  background: #aaa;
+  border-radius: 50% 50% 50% 50%;
+  bottom: -30px;
+  left: 75px;
+  transform: rotate(10deg);
+}
+
+.nageoire {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background: #aaa;
+  border-radius: 50%;
+  top: 100px;
+  left: 30px;
+  transform: rotate(30deg);
+}
+
+.oeil {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  top: 40px;
+  left: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="lamantin">
+  <div class="tete"></div>
+  <div class="queue"></div>
+  <div class="nageoire"></div>
+  <div class="oeil"></div>
+</div>
+
+</body>
+</html>
